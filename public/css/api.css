@@ -1,0 +1,114 @@
+/*---------------------------------------------------------------------------------------*/
+/*----------------------------------------Dashboard----------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+#section-tittle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#tittle-a{
+    font-family: Orbitron;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+#tittle-a::after {
+    background: none repeat scroll 0 0 #E8652C;
+    height: 2px;
+    margin: 10px 0px;
+    width: 114px;
+    content: "";
+    display: block;
+}
+#estado-api {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Open Sans;
+    padding: 6px 0px;
+    background: #010943;
+    width: 200px;
+    text-align: center;
+    transition: 1s all;
+}
+.swich-api {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Open Sans;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#btn-action {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 60px;
+}
+#swich-a {
+    content: "";
+    width: 60px;
+    height: 20px;
+    border: 1px solid #a2a2a2;
+    box-shadow: 0px 0px 3px #ababab;
+    border-radius: 20px;
+    position: relative;
+}
+#swich-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    content: "";
+    background: #010943;
+    top: -5px;
+    left: -1px;
+    transition: 0.5s all;
+}
+#api-date {
+    max-width: 650px;
+}
+#api-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#api-box1, #api-box2 {
+    max-width: 300px;
+    width: 100%;
+}
+.box-style {
+    margin-bottom: 20px;
+}
+.box-style h1 {
+    width: 100%;
+    background: #010943;
+    color: #ffffff;
+    font-family: Open Sans;
+    font-weight: 400;
+    padding: 10px 20px;
+}
+.internal-style {
+    background: #E3E1E1;
+    padding: 20px;
+}
+.internal-style p {
+    font-style: italic;
+    color: #E8652C;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+.internal-style button {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Open Sans;
+    padding: 4px 31px;
+    background: #010943;
+    text-align: center;
+    border-radius: 10px;
+}
+.internal-style button:hover {
+    background: #E8652C;
+}
+/*--------------------Responsive-dashboard--------------------*/
+

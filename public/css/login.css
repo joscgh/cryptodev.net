@@ -1,0 +1,116 @@
+/*---------------------------------------------------------------------------------------*/
+/*----------------------------------------Login----------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+#login{
+    position: relative;
+}
+.box-l{
+    background-image: url("../images/login/background-l.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    padding: 0;
+    position: relative;
+}
+#login form{
+    color: #000000;
+    position: relative;
+    padding: 240px 0px;
+    max-width: 580px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+}
+#send-l{
+    background: #E8652C;
+    border: none;
+    padding: 5px 30px;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    margin-top: 40px;
+}
+.alig-l{
+    display: flex;
+    margin: 20px 0px;
+    height: 50px;
+}
+.alig-l img{
+    margin-right: 20px;
+}
+#em-l{
+    width: 30px;
+}
+#pw-l{
+    width: 30px;
+}
+.into-text-l{
+    background: #ffffff;
+    border: solid #969696 1px;
+    border-radius: 14px;
+    padding: 5px 16px;
+    color: #000000;
+    font-family: Open Sans;
+    font-size: 20px;
+    width: 556px;
+    margin: 4px 0px;
+    font-style: initial;
+}
+.into-text-l::placeholder{ 
+    font-style: italic;
+    color: #969696;
+}
+#send-l:hover{
+    box-shadow: 0px 0px 8px -1px #888888;
+    cursor: pointer;
+}
+#triangle-l{
+    position: absolute;
+    bottom: -1px;
+}
+#triangle-f {
+    display: none;
+}
+/*--------------------Responsive-login--------------------*/
+@media screen and (max-width: 768px){
+    .box-l{
+        background-size: initial;
+        background-position: initial;
+    }
+}
+@media screen and (max-width: 400px){
+    #login form {
+        width: 270px;
+        margin: 0px auto;
+        padding: 130px 0px;
+    }
+    .into-text-l::placeholder {
+        font-style: italic;
+        color: #c9c9c9;
+    }
+    .into-text-l {
+        border: solid #c9c9c9 1px;
+        border-radius: 10px;
+        padding: 5px 16px;
+        font-size: 11px;
+        width: 220px;
+        margin: 4px 0px;
+    }
+    .alig-l img {
+        margin-right: 10px;
+    }
+    #em-l{
+        width: 24px;
+    }
+    #pw-l{
+        width: 24px;
+    }
+    #send-l {
+        font-size: 12px;
+        margin-top: 30px;
+    }
+}

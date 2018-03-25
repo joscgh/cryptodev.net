@@ -1,0 +1,283 @@
+/*---------------------------------------------------------------------------------------*/
+/*----------------------------------------Perfil----------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+#wrap-cont-u input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #95989A;
+    opacity: 1; /* Firefox */
+}
+
+#wrap-cont-u input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #95989A;
+}
+
+#wrap-cont-u input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #95989A;
+}
+
+.internal-line {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+.line-solid {
+    position: absolute;
+    content: "";
+    width: 1px;
+    background: #95989A;
+    height: 100%;
+    right: 50px;
+    right: 36px;
+}
+#wrap-cont-u select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('../images/user/arrow.png') no-repeat;
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-size: auto auto;
+    background-size: 10% auto;
+    border-radius: 12px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #95989A;
+    padding: 10px 35px 10px 14px;
+    border-radius: 14px;
+    color: #95989A;
+    background-size: initial;
+    background-position: center right 10px;
+    font-family: Open Sans;
+}
+.tittle-p {
+    font-family: Orbitron;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.tittle-p::after {
+    background: none repeat scroll 0 0 #E8652C;
+    height: 2px;
+    margin: 10px 0px;
+    width: 114px;
+    content: "";
+    display: block;
+}
+.head-inf,.head-dat,.head-seg {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid #DD571B;
+    padding: 0px 10px 0px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+    height: 40px;
+    margin: 5% 0%;
+}
+.logo-sec {
+    height: 28px;
+}
+.head-inf h2,.head-dat h2,.head-seg h2{
+    font-size: 16px;
+    padding: 0px 10px;
+}
+.vertical {
+    content: "";
+    display: block;
+    background: #DD571B;
+    width: 1px;
+    height: 100%;
+    margin-right: 10px;
+}
+.fileContainer {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.fileContainer [type=file] {
+    cursor: inherit;
+    display: block;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
+/*-----Photo-----*/
+#photo-img {
+    text-align: center;
+    width: 140px;
+}
+#photo-img img {
+    border-radius: 60px;
+    width: 100px;
+}
+#photo-img p {
+    background: #E8652C;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 6px 26px;
+    border-radius: 14px;
+    cursor: pointer;
+}
+#photo-img p:hover {
+    background: #010943;
+}
+#box-photo {
+    display: flex;
+    align-items: center;
+}
+.fileContainer {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #95989A;
+    padding: 10px 20px;
+    border-radius: 14px;
+    color: #95989A;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.btn-file {
+    background: #E8652C;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 0px 22px;
+    border-radius: 8px;
+    height: 24px;
+}
+/*-----Datos-----*/
+.sub-dat label {
+    margin-top: 20px;
+}
+#date-informacion {
+    padding-left: 140px;
+    width: 100%;
+}
+.mediun-width {
+    display: flex;
+}
+.zone-m {
+    width: 40px;
+    content: "";
+}
+#date-informacion input,#fecha-nacimiento,#direccion-res,#codigo-pos {
+    border: 1px solid #95989A;
+    padding: 10px 20px;
+    border-radius: 14px;
+    color: #95989A;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+    background: transparent;
+    font-family: Open Sans;
+}
+/*-----Seguridad-----*/
+.sub-seg {
+    display: flex;
+    justify-content: initial;
+    flex-wrap: wrap;
+}
+/*-----Check-box-----*/
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 700;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    height: 20px;
+    width: 20px;
+    border-radius: 7px;
+    border: 2px solid #E8652C;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 5px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid #E8652C;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*-----Boton-form-----*/
+#save-perfil {
+    background: #E8652C;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 6px 26px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    margin: 5% 0%;
+}
+/*--------------------Responsive-perfil--------------------*/
+
+@media screen and (max-width: 1120px){
+#box-photo {
+    display: block;
+    align-items: center;
+}
+#photo-img {
+    margin-bottom: 20px;
+}
+#date-informacion {
+    padding-left: 0px;
+}
+.mediun-width {
+    display: block;
+}
+.zone-m {
+    width: 0px;
+}
+}
+
+@media screen and (max-width: 400px){
+#wrap-cont-u select{
+    font-size: 14px;
+}
+}

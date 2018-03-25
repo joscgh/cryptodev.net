@@ -1,0 +1,79 @@
+/*---------------------------------------------------------------------------------------*/
+/*----------------------------------------Dashboard----------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+#tittle-a{
+    font-family: Orbitron;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+#tittle-a::after {
+    background: none repeat scroll 0 0 #E8652C;
+    height: 2px;
+    margin: 10px 0px;
+    width: 114px;
+    content: "";
+    display: block;
+}
+input[type="text"]#search-a {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    background-image: url('../images/user/search-icon.png');
+    background-position: 14px 10px;
+    background-repeat: no-repeat;
+    padding: 14px 20px 14px 54px;
+    margin: 20px 0px;
+}
+#btn-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+#btn-s1{
+    border: none;
+    color: #ffffff;
+    background: #E8652C;
+    font-size: 19px;
+    font-family: Open Sans;
+    font-weight: 700;
+    padding: 8px 26px;
+    border-radius: 20px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+#btn-s1:hover{
+    background: #010943;
+}
+#responsive-t {
+    overflow: auto;
+}
+#table-a {
+    width: 100%;
+    border-collapse: collapse;
+    /*table-layout: fixed;*/
+}
+#table-a thead tr {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Open Sans;
+    background: #010943;
+    color: #ffffff;
+}
+#table-a thead tr th{
+    padding: 10px 0px;
+}
+#table-a td {
+    height: 80px;
+}
+#table-a tr td:nth-child(odd){ 
+    background: #D9D8D8;
+}
+
+#table-a tr td:nth-child(even){
+    background: #E3E1E1;
+}
+/*--------------------Responsive-dashboard--------------------*/
+

@@ -1,0 +1,122 @@
+/*---------------------------------------------------------------------------------------*/
+/*----------------------------------------Sing-Up----------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+#sing-up{
+    position: relative;
+}
+.box-s{
+    background-image: url("../images/sing-up/background-s.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    padding: 0;
+    position: relative;
+}
+#sing-up form{
+    color: #000000;
+    position: relative;
+    padding: 240px 0px;
+    max-width: 580px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+}
+#send-s{
+    background: #E8652C;
+    border: none;
+    padding: 5px 30px;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    margin-top: 40px;
+}
+.alig-s{
+    display: flex;
+    margin: 20px 0px;
+    height: 50px;
+}
+.alig-s img{
+    margin-right: 20px;
+}
+#em-s{
+    width: 30px;
+}
+#pw-s{
+    width: 30px;
+}
+#rp-s{
+    width: 30px;
+}
+.into-text-s{
+    background: #ffffff;
+    border: solid #969696 1px;
+    border-radius: 14px;
+    padding: 5px 16px;
+    color: #000000;
+    font-family: Open Sans;
+    font-size: 20px;
+    width: 556px;
+    margin: 4px 0px;
+    font-style: initial;
+}
+.into-text-s::placeholder{ 
+    font-style: italic;
+    color: #969696;
+}
+#send-s:hover{
+    box-shadow: 0px 0px 8px -1px #888888;
+    cursor: pointer;
+}
+#triangle-s{
+    position: absolute;
+    bottom: -1px;
+}
+#triangle-f {
+    display: none;
+}
+/*--------------------Responsive-sing-up--------------------*/
+@media screen and (max-width: 768px){
+    .box-s{
+        background-size: initial;
+        background-position: initial;
+    }
+}
+@media screen and (max-width: 400px){
+    #sing-up form {
+        width: 270px;
+        margin: 0px auto;
+        padding: 130px 0px;
+    }
+    .into-text-s::placeholder {
+        font-style: italic;
+        color: #c9c9c9;
+    }
+    .into-text-s {
+        border: solid #c9c9c9 1px;
+        border-radius: 10px;
+        padding: 5px 16px;
+        font-size: 11px;
+        width: 220px;
+        margin: 4px 0px;
+    }
+    .alig-s img {
+        margin-right: 10px;
+    }
+    #em-s{
+        width: 24px;
+    }
+    #pw-s{
+        width: 24px;
+    }
+    #rp-s{
+        width: 24px;
+    }
+    #send-s {
+        font-size: 12px;
+        margin-top: 30px;
+    }
+}

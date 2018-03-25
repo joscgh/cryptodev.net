@@ -1,0 +1,105 @@
+/*---------------------------------------------------------------------------------------*/
+/*----------------------------------------Pagos----------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+#box-price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.price-style {
+    width: 240px;
+    margin-top: 40px;
+}
+.head-style {
+    border-bottom: 2px solid #000000;
+}
+.head-style h1 {
+    position: absolute;
+    top: 32px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    transform: rotate(-45deg);
+    left: -75px;
+    color: #ffffff;
+}
+#free-price .head-style h1 {
+    background: #FF5700;
+}
+#bronce-price .head-style h1 {
+    background: #010943;
+}
+#silver-price .head-style h1 {
+    background: #313131;
+}
+#gold-price .head-style h1 {
+    background: #CB9C00;
+}
+#free-price .head-style {
+    position: relative;
+    overflow: hidden;
+    background: #010943;
+    color: #ffffff;
+    padding: 80px 0px 20px;
+}
+#bronce-price .head-style {
+    position: relative;
+    overflow: hidden;
+    background: #E8652C;
+    color: #000000;
+    padding: 80px 0px 20px;
+}
+#silver-price .head-style {
+    position: relative;
+    overflow: hidden;
+    background: #7E7E7E;
+    color: #000000;
+    padding: 80px 0px 20px;
+}
+#gold-price .head-style {
+    position: relative;
+    overflow: hidden;
+    background: #EFB600;
+    color: #000000;
+    padding: 80px 0px 20px;
+}
+.rent-p {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.rent-p h2 {
+    font-size: 36px;
+}
+.rent-p p {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+}
+.cont-style {
+    text-align: center;
+    background: #F1F1EF;
+    border: 1px solid #bcbcbc;
+    padding: 40px;
+}
+.cont-style p {
+    margin-bottom: 30px;
+}
+.cont-style button {
+    padding: 6px 28px;
+    font-family: Open Sans;
+    font-weight: 700;
+    background: #010943;
+    color: #ffffff;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.cont-style button:hover {
+    background: #DD571B;
+}
+/*--------------------Responsive-pagos--------------------*/
+
+@media screen and (max-width: 400px){
+
+}
